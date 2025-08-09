@@ -1,6 +1,8 @@
+reserve.md
 HELP.md
 .gradle
 build/
+.idea/gradle.xml
 
 ### STS ###
 .apt_generated
@@ -44,4 +46,4 @@ captures/
 *.rar
 
 ### Gradle ###
-!/gradle/wrapper/gradle-wrapper.jar
+!gradle/wrapper/gradle-wrapper.jar
