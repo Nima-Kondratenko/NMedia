@@ -75,10 +75,18 @@ class MainActivity : AppCompatActivity() {
     private fun formatCount(count: Int): String {
         return when {
             count < 1000 -> count.toString()
-            count < 10_000 -> String.format("%.1fK", count / 1000.0).replace(",", ".")
-            count < 1_000_000 -> "${count / 1000}K"
-            else -> String.format("%.1fM", count / 1_000_000.0).replace(",", ".")
+            count < 10_000 -> {
+                 String.format("%.1fK", count / 1000.0).replace(",", ".")
+            }
+            count < 1_000_000 -> {
+                "${count / 1000}K"
+            }
+            else -> {
+                String.format("%.1fM", count / 1_000_000.0).replace(",", ".")
+            }
         }
     }
+
 }
+
 
