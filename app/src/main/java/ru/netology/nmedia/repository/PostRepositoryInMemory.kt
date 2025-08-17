@@ -12,7 +12,7 @@ class PostRepositoryInMemoryImpl : PostRepository {
         published = "21 мая в 18:36",
         likes = 10,
         likeByMe = false,
-        shareCount = 0
+        shareCount = 1699
     )
 
     private val data = MutableLiveData(post)
