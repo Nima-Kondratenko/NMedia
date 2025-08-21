@@ -36,7 +36,6 @@ class PostRepositoryInMemoryImpl : PostRepository {
         val postIndex = posts.indexOfFirst { it.id == id }
         if (postIndex != -1) {
             val post = posts[postIndex]
-            // был ли лайк уже поставлен
             val newLikes = if (post.likeByMe) post.likes - 1 else post.likes + 1
             posts[postIndex] = post.copy(likes = newLikes, likeByMe = !post.likeByMe)
             data.value = posts

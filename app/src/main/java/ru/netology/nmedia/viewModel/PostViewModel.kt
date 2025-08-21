@@ -1,3 +1,4 @@
+package ru.netology.nmedia.viewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModel
 import ru.netology.nmedia.dto.Post

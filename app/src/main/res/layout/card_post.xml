@@ -8,13 +8,15 @@
 
     <ImageView
         android:id="@+id/avatars"
+        android:src="@drawable/ic_netology_48dp"
         android:layout_width="48dp"
         android:layout_height="48dp"
         android:layout_marginTop= "@dimen/text_spacing16dp"
         app:layout_constraintBottom_toBottomOf="@id/barrier"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:srcCompat="@sample/posts_avatars" />
+        tools:srcCompat="@sample/posts_avatars"
+        android:contentDescription="@string/description_post_author_avatar"/>
 
     <TextView
         android:id="@+id/author"
@@ -49,7 +51,8 @@
         android:layout_marginBottom="@dimen/common_margin8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_more_vert_24" />
+        app:srcCompat="@drawable/ic_more_vert_24"
+        android:contentDescription="@string/description_post_menu" />
 
     <androidx.constraintlayout.widget.Barrier
         android:id="@+id/barrier"
@@ -93,7 +96,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/text_spacing16dp"
         android:layout_marginTop="@dimen/common_spacing48dp"
-        android:paddingEnd="16dp"
+        android:paddingEnd="@dimen/text_spacing16dp"
         app:layout_constraintStart_toEndOf="@+id/like"
         app:layout_constraintTop_toBottomOf="@id/footer"
         android:text="6" />

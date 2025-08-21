@@ -1,6 +1,5 @@
 package ru.netology.nmedia.activity
 
-import PostViewModel
 import android.os.Bundle
 import android.util.Log
 import androidx.activity.viewModels
@@ -38,7 +37,7 @@ class MainActivity : AppCompatActivity() {
                     like.setImageResource(if (post.likeByMe) R.drawable.ic_liked_24 else R.drawable.ic_like_24)
 
                     like.setOnClickListener {
-                        viewModel.like(post.id) // Убедитесь, что метод like() существует в ViewModel
+                        viewModel.like(post.id)
                     }
                 }
             }
