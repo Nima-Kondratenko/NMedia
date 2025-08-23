@@ -1,10 +1,14 @@
 package ru.netology.nmedia.viewModel
+
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModel
 import ru.netology.nmedia.dto.Post
 import ru.netology.nmedia.repository.PostRepository
+import ru.netology.nmedia.repository.PostRepositoryInMemoryImpl
 
-class PostViewModel(private val repository: PostRepository) : ViewModel() {
+class PostViewModel(
+    private val repository: PostRepository = PostRepositoryInMemoryImpl()
+) : ViewModel() {
 
     val posts: LiveData<List<Post>> = repository.get()
 
